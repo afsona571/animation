@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+@keyframes square-to-circle {
+    0%{
+        top: 0;
+        left: 0;
+        background-color: blue;
+        
+    }
+    25%{
+        top: 0;
+        left: 200px;
+        background-color: brown;
+
+    }
+    50%{
+        top: 80px;
+        left: 200px;
+        background-color: aqua;
+    }
+    100%{
+        top: 80px;
+        left: 10px;
+        background-color: blueviolet;
+    }
+}
+
+.square{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    animation-name: square-to-circle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    animation-timing-function: 1s;
+    animation-delay: 250ms;
+   
+}
+
